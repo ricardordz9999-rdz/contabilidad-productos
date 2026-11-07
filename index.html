@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Super Mercado Mario
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Contenedor para alinear la imagen y el título -->
+        <div class="header-container">
+            <img src="img/logo.jpg" alt="Logo del Super Mercado Mario" class="logo-super">
+            <h1>Bienvenido al Super Mercado Mario</h1>
+        </div>
+        <h2>Nombre: <input type="text" id="Nombre" placeholder="Ingrese su Nombre"></h2>
+        <h3>Edad: <input type="number" id="edad" placeholder="Ingrese su Edad"></h3>
+        <h4>Genero: <select id="Genero">
+            <option value="">-- Elige una Opción --</option>
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+</select></h3>
+<h4>Cliente: <select id="Cliente">
+    <option value="">-- Membresia --</option>
+    <option value="oro">Oro</option>
+    <option value="plata">Plata</option>
+    <option value="Premium">Premium</option>
+
+</select></h3>
+<button onclick="guardardatos()">Guardar</button>
+<p id="saludo"></p>
+<script src="script.js"></script>
+    </body>
+</html>

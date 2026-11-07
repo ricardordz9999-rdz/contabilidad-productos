@@ -1,0 +1,103 @@
+/* Estilo general de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+/* Contenedor que junta la imagen y el título en una sola fila */
+.header-container {
+    display: flex;
+    align-items: center; /* Los alinea verticalmente al centro */
+    justify-content: space-between;   /* Alinea el contenido hacia el lado derecho */
+    flex-direction: row-reverse;  /* ¡Esto invierte el orden! La imagen pasa a la derecha */
+    gap: 15px;           /* Espacio de separación entre la imagen y el título */
+    margin-bottom: 25px;
+}
+
+/* Estilo y tamaño del logotipo */
+.logo-super {
+    width: 150px;         /* Ancho de la imagen */
+    height: 60px;        /* Alto de la imagen */
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
+
+/* Ajuste al título para que comparta el espacio correctamente */
+.header-container h1 {
+    margin: 0;           /* Elimina márgenes extra para una perfecta alineación */
+    font-size: 22px;     /* Tamaño ajustado para que quepa bien al lado de la imagen */
+    text-align: left;    /* Alineado a la izquierda junto al logo */
+}
+/* Título principal */
+h1 {
+    color: #2e7d32; /* Verde supermercado */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Etiquetas del formulario */
+h2, h3, h4 {
+    font-size: 15px;
+    color: #455a64;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cajas de texto y menús desplegables */
+input[type="text"],
+input[type="number"],
+select {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al hacer clic en los inputs */
+input:focus, select:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+/* Botón de Guardar */
+button {
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Cuadro de texto de resultados */
+#saludo {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #1b5e20;
+    text-align: center;
+}
